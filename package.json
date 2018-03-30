@@ -1,8 +1,8 @@
 {
   "name": "qc-api-server",
+  "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
@@ -19,7 +19,8 @@
     "eslint-plugin-import": "^2.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node lib/index.js",
+    "check": "eslint lib/**/*.js"
   },
   "author": "",
   "license": "ISC"
